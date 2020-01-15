@@ -1,7 +1,9 @@
 package com.hxch.springboot.entity;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.Date;
 import java.util.List;
@@ -16,6 +18,8 @@ import java.util.Map;
 
 @Component
 @ConfigurationProperties(prefix = "emp")
+@PropertySource(value = {"classpath:emp.properties"})
+@Validated
 public class Emp {
     private String lastName;
     private Integer age;

@@ -16,7 +16,7 @@ public class SpringBoot01Init02ApplicationTests {
 
     @Test
     public void contextLoads() {
-        System.out.println("$$$$$$$$$$$$"+emp.toString());
+        System.out.println("$$$$$$$$$$$$ "+emp.toString());
     }
 
 }
