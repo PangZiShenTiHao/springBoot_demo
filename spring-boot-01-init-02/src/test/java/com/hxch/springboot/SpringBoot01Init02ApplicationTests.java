@@ -2,6 +2,7 @@ package com.hxch.springboot;
 
 import com.hxch.springboot.entity.Emp;
 import com.hxch.springboot.service.EmpService;
+import com.hxch.springboot.service.EmpService02;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,4 +32,12 @@ public class SpringBoot01Init02ApplicationTests {
         empService.add();
         System.out.println("empService: " + context.getBean("empService"));
     }
+
+    @Test
+    public void testConfig() {
+
+        EmpService02 empService02 = (EmpService02) context.getBean("empService02");
+        empService02.add2();
+    }
+
 }
