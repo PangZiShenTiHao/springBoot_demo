@@ -18,7 +18,7 @@ import java.util.Map;
 
 @Component
 @ConfigurationProperties(prefix = "emp")
-@PropertySource(value = {"classpath:emp.properties"})
+//@PropertySource(value = {"classpath:emp.properties"})
 @Validated
 public class Emp {
     private String lastName;
