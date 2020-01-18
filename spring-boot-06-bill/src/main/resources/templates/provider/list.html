@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>梦学谷账单管理系统</title>
     <link rel="stylesheet" th:href="@{/css/public.css}" href="../css/public.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" th:href="@{css/style.css}" href="../css/style.css"/>
 </head>
 <body>
 <!--头部-->
@@ -65,9 +65,9 @@
                 <td>15918230478</td>
                 <td>2015-11-12</td>
                 <td>
-                    <a href="view.html"><img src="../img/read.png" alt="查看" title="查看"/></a>
-                    <a href="update.html"><img src="../img/xiugai.png" alt="修改" title="修改"/></a>
-					<a href="#" class="delete" ><img src="../img/schu.png" alt="删除" title="删除"/></a>
+                    <a href="view.html"><img th:src="@{/img/read.png}" src="../img/read.png" alt="查看" title="查看"/></a>
+                    <a href="update.html"><img th:src="@{/img/xiugai.png}" src="../img/xiugai.png" alt="修改" title="修改"/></a>
+					<a href="#" class="delete" ><img th:src="@{/img/schu.png}" src="../img/schu.png" alt="删除" title="删除"/></a>
                 </td>
             </tr>
             <tr>
@@ -78,9 +78,9 @@
                 <td>15918230478</td>
                 <td>2015-11-12</td>
                 <td>
-                    <a href="view.html"><img src="../img/read.png" alt="查看" title="查看"/></a>
-                    <a href="update.html"><img src="../img/xiugai.png" alt="修改" title="修改"/></a>
-					<a href="#" class="delete" ><img src="../img/schu.png" alt="删除" title="删除"/></a>
+                    <a href="view.html"><img th:src="@{/img/read.png}" src="../img/read.png" alt="查看" title="查看"/></a>
+                    <a href="update.html"><img th:src="@{/img/xiugai.png}" src="../img/xiugai.png" alt="修改" title="修改"/></a>
+					<a href="#" class="delete" ><img th:src="@{/img/schu.png}" src="../img/schu.png" alt="删除" title="删除"/></a>
                 </td>
             </tr>
         </table>
@@ -107,8 +107,8 @@
 
 <footer class="footer"><div style="text-align:center;">	<p><a href="http://www.mengxuegu.com/" target="_blank">梦学谷 www.mengxuegu.com</a> 版权所有</p></div></footer>
 
-<script src="../js/jquery.js"></script>
-<script src="../js/js.js"></script>
+<script th:src="@{/webjars/jquery/3.3.1/jquery.js}" src="../js/jquery.js"></script>
+<script th:src="@{/js/js.js}" src="../js/js.js"></script>
 <!--
 	<script src="js/time.js"></script>
 	-->
